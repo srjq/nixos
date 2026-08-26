@@ -28,11 +28,9 @@ in
   services.greetd = {
     enable = loginManager == "tuigreet";
 
-    settings = {
-      default_session = {
-        user = "greeter";
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --cmd 'start-hyprland >/dev/null 2>&1'";
-      };
+    settings.default_session = {
+      user = "greeter";
+      command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --cmd 'start-hyprland >/dev/null 2>&1'";
     };
   };
 }
