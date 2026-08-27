@@ -5,6 +5,7 @@
     ./fish.nix
     ./foot.nix
     ./git.nix
+    ./packages.nix
     ./starship.nix
     ./tools.nix
     ./zen.nix

@@ -3,12 +3,17 @@
 {
   imports = [
     ./hardware.nix
+
     ../../modules/users.nix
     ../../modules/packages.nix
     ../../modules/fonts.nix
     ../../modules/login.nix
     ../../modules/desktop.nix
     ../../modules/cursor.nix
+    ../../modules/networking.nix
+
+    ../../services/jellyfin.nix
+    ../../services/navidrome.nix
   ];
 
   # Bootloader

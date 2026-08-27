@@ -7,6 +7,7 @@
     wget
     curl
     unzip
+    zip
     neovim
     caelestia-shell
   ];
